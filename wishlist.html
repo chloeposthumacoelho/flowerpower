@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacay Store / Wishlist</title>
+    <link href="https://vacay-ui.netlify.app/components/vacay.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<header class="header box-shadow">
+    <div class="hamburger-logo-wrapper">
+        <button><i class="fas fa-bars"></i></button>
+        <h2 class="logo">vacay</h2>
+    </div>
+    <nav class="hamburger-menu">
+        <ul>
+            <li><button><i class="fas fa-times"></i></button></li>
+            <li><a href="/pages/login.html" class="btn btn-secondary-link">Login</a></li>
+            <li><a href="/pages/wishlist.html" class="btn btn-secondary-link">Wishlist</a></li>
+            <li><a href="/pages/cart.html" class="btn btn-secondary-link">Cart</a></li>
+        </ul>
+    </nav>
+    <nav class="navigation">
+        <ul>
+            <li><a href="/index.html" class="btn btn-secondary-link">Home</a></li>
+            <li><a href="/pages/product.html" class="btn btn-secondary-link">Products</a></li>
+        </ul>
+    </nav>
+    <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search">
+    </div>
+    <nav class="navigation nav-hide">
+        <ul>
+            <li><a href="/pages/login.html" class="btn btn-primary">Login</a></li>
+            <li class="badge-wrapper">
+                <a href="/pages/wishlist.html"><i class="btn-icon far fa-heart"></i></a>
+                <span class="badge badge-number">5</span>
+            </li>
+            <li>
+                <a href="/pages/cart.html" class="btn btn-secondary-icon-text-no-border">
+                    <div class="badge-wrapper">
+                        <i class="btn-icon fas fa-shopping-cart"></i>
+                        <span class="badge badge-number">5</span>
+                    </div>
+                    Cart
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="wishlist-card-wrapper">
+        <h2>My Wishlist</h2>
+        <div class="card card-horizontal card-horizontal-lg">
+            <img src="/assets/camera.jpg" class="img-responsive" alt="camera">
+            <div class="card-info">
+                <h5 class="card-title">Camera</h5>
+                <span class="card-price">Rs. 20,000</span>
+                <span class="card-discount">50% off</span>
+            </div>
+            <div class="card-btn-wrapper">
+                <a href="#" class="btn btn-primary">Move to cart</a>
+                <a href="#" class="btn btn-secondary-outline">Remove</a>
+            </div>
+        </div>
+        <div class="card card-horizontal card-horizontal-lg">
+            <img src="/assets/camera1.jpg" class="img-responsive" alt="camera">
+            <div class="card-info">
+                <h5 class="card-title">Nikon DSLR Camera</h5>
+                <span class="card-price">Rs. 30,000</span>
+                <span class="card-discount">10% off</span>
+            </div>
+            <div class="card-btn-wrapper">
+                <a href="#" class="btn btn-primary">Move to cart</a>
+                <a href="#" class="btn btn-secondary-outline">Remove</a>
+            </div>
+        </div>
+        <div class="card card-horizontal card-horizontal-lg">
+            <img src="/assets/suitcase.jpg" class="img-responsive" alt="camera">
+            <div class="card-info">
+                <h5 class="card-title">Travel Suitcase</h5>
+                <span class="card-price">Rs. 10,000</span>
+                <span class="card-discount">30% off</span>
+            </div>
+            <div class="card-btn-wrapper">
+                <a href="#" class="btn btn-primary">Move to cart</a>
+                <a href="#" class="btn btn-secondary-outline">Remove</a>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

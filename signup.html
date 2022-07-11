@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacay Store / Signup</title>
+    <link href="https://vacay-ui.netlify.app/components/vacay.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="grid-container-login">
+    <header class="header box-shadow">
+        <div class="hamburger-logo-wrapper">
+            <button><i class="fas fa-bars"></i></button>
+            <h2 class="logo">vacay</h2>
+        </div>
+        <nav class="hamburger-menu">
+            <ul>
+                <li><button><i class="fas fa-times"></i></button></li>
+                <li><a href="/pages/login.html" class="btn btn-secondary-link">Login</a></li>
+                <li><a href="/pages/wishlist.html" class="btn btn-secondary-link">Wishlist</a></li>
+                <li><a href="/pages/cart.html" class="btn btn-secondary-link">Cart</a></li>
+            </ul>
+        </nav>
+        <nav class="navigation">
+            <ul>
+                <li><a href="/index.html" class="btn btn-secondary-link">Home</a></li>
+                <li><a href="/pages/product.html" class="btn btn-secondary-link">Products</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+        <nav class="navigation nav-hide">
+            <ul>
+                <li><a href="/pages/login.html" class="btn btn-primary">Login</a></li>
+                <li class="badge-wrapper">
+                    <a href="/pages/wishlist.html"><i class="btn-icon far fa-heart"></i></a>
+                    <span class="badge badge-number">5</span>
+                </li>
+                <li>
+                    <a href="/pages/cart.html" class="btn btn-secondary-icon-text-no-border">
+                        <div class="badge-wrapper">
+                            <i class="btn-icon fas fa-shopping-cart"></i>
+                            <span class="badge badge-number">5</span>
+                        </div>
+                        Cart
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="post" class="form box-shadow">
+        <h3>Signup</h3>
+        <div class="input input-text">
+            <label for="">Email address</label>
+            <input type="email" placeholder="example@gmail.com">
+        </div>
+        <div class="input input-text">
+            <label for="">First name</label>
+            <input type="text" placeholder="First name">
+        </div>
+        <div class="input input-text">
+            <label for="">Last name</label>
+            <input type="text" placeholder="Last name">
+        </div>
+        <div class="input input-text">
+            <label for="">Password</label>
+            <input type="password" placeholder="************">
+        </div>
+        <div class="input input-text">
+            <label for="">Confirm password</label>
+            <input type="password" placeholder="************">
+        </div>
+        <div class="input input-checkbox-radio">
+            <input type="checkbox">
+            <label for="">I accept all terms & conditions</label>
+        </div>
+        <a href="#" class="btn btn-primary">Create New Account</a>
+        <a href="/pages/login.html" class="btn btn-secondary-icon-text-no-border">Already have an account <i class="fas fa-chevron-right"></i></a>
+    </form>
+    <script src="/script.js"></script>
+</body>
+</html>

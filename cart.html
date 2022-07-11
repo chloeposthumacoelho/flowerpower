@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacay Store / Cart</title>
+    <link href="https://vacay-ui.netlify.app/components/vacay.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="header box-shadow">
+        <div class="hamburger-logo-wrapper">
+            <button><i class="fas fa-bars"></i></button>
+            <h2 class="logo">vacay</h2>
+        </div>
+        <nav class="hamburger-menu">
+            <ul>
+                <li><button><i class="fas fa-times"></i></button></li>
+                <li><a href="/pages/login.html" class="btn btn-secondary-link">Login</a></li>
+                <li><a href="/pages/wishlist.html" class="btn btn-secondary-link">Wishlist</a></li>
+                <li><a href="/pages/cart.html" class="btn btn-secondary-link">Cart</a></li>
+            </ul>
+        </nav>
+        <nav class="navigation">
+            <ul>
+                <li><a href="/index.html" class="btn btn-secondary-link">Home</a></li>
+                <li><a href="/pages/product.html" class="btn btn-secondary-link">Products</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+        <nav class="navigation nav-hide">
+            <ul>
+                <li><a href="/pages/login.html" class="btn btn-primary">Login</a></li>
+                <li class="badge-wrapper">
+                    <a href="/pages/wishlist.html"><i class="btn-icon far fa-heart"></i></a>
+                    <span class="badge badge-number">5</span>
+                </li>
+                <li>
+                    <a href="/pages/cart.html" class="btn btn-secondary-icon-text-no-border">
+                        <div class="badge-wrapper">
+                            <i class="btn-icon fas fa-shopping-cart"></i>
+                            <span class="badge badge-number">5</span>
+                        </div>
+                        Cart
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 class="page-title">My Cart (<span>4</span>)</h2>
+    <div class="grid-container-cart">
+        <div class="card-wrapper-cart">
+            <div class="card card-horizontal card-horizontal-md">
+                <img src="/assets/camera1.jpg" class="img-responsive" alt="camera">
+                <div class="card-content-vertical">
+                    <div class="card-info">
+                        <h5 class="card-title">Nikon DSLR Camera</h5>
+                        <span class="card-price">Rs. 30,000</span>
+                        <span class="card-discount">50% off</span>
+                    </div>
+                    <div class="product-count">
+                        <span>Quantity : </span>
+                        <a href="#"><i class="fas fa-minus"></i></a>
+                        <span class="counter">2</span>
+                        <a href="#"><i class="fas fa-plus"></i></a>
+                    </div>
+                    <div class="card-btn-wrapper">
+                        <a href="#" class="btn btn-secondary-outline">Remove</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-horizontal card-horizontal-md">
+                <img src="/assets/suitcase.jpg" class="img-responsive" alt="camera">
+                <div class="card-content-vertical">
+                    <div class="card-info">
+                        <h5 class="card-title">Travel Suitcase</h5>
+                        <span class="card-price">Rs. 10,000</span>
+                        <span class="card-discount">10% off</span>
+                    </div>
+                    <div class="product-count">
+                        <span>Quantity : </span>
+                        <a href="#"><i class="fas fa-minus"></i></a>
+                        <span class="counter">2</span>
+                        <a href="#"><i class="fas fa-plus"></i></a>
+                    </div>
+                    <div class="card-btn-wrapper">
+                        <a href="#" class="btn btn-secondary-outline">Remove</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside class="price-card box-shadow">
+            <h4>PRICE DETAILS</h4>
+            <hr>
+            <ul>
+                <li>
+                    <span>Price (2 items)</span>
+                    <span>Rs. 4999</span>
+                </li>
+                <li>
+                    <span>Discount</span>
+                    <span>- Rs. 999</span>
+                </li>
+                <li>
+                    <span>Delivery Charges</span>
+                    <span>Rs. 49</span>
+                </li>
+            </ul>
+            <hr>
+            <div class="total-amount">
+                <span>TOTAL AMOUNT</span>
+                <span>Rs. 4999</span>
+            </div>
+            <hr>
+            <p>You will save Rs. <span>999</span> on this order</p>
+            <a href="#" class="btn btn-primary">PLACE ORDER</a>
+        </aside>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

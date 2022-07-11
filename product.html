@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacay Store / Products</title>
+    <link href="https://vacay-ui.netlify.app/components/vacay.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="header box-shadow">
+        <div class="hamburger-logo-wrapper">
+            <button><i class="fas fa-bars"></i></button>
+            <h2 class="logo">vacay</h2>
+        </div>
+        <nav class="hamburger-menu">
+            <ul>
+                <li><button><i class="fas fa-times"></i></button></li>
+                <li><a href="/pages/login.html" class="btn btn-secondary-link">Login</a></li>
+                <li><a href="/pages/wishlist.html" class="btn btn-secondary-link">Wishlist</a></li>
+                <li><a href="/pages/cart.html" class="btn btn-secondary-link">Cart</a></li>
+            </ul>
+        </nav>
+        <nav class="navigation">
+            <ul>
+                <li><a href="/index.html" class="btn btn-secondary-link">Home</a></li>
+                <li><a href="/pages/product.html" class="btn btn-secondary-link">Products</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+        <nav class="navigation nav-hide">
+            <ul>
+                <li><a href="/pages/login.html" class="btn btn-primary">Login</a></li>
+                <li class="badge-wrapper">
+                    <a href="/pages/wishlist.html"><i class="btn-icon far fa-heart"></i></a>
+                    <span class="badge badge-number">5</span>
+                </li>
+                <li>
+                    <a href="/pages/cart.html" class="btn btn-secondary-icon-text-no-border">
+                        <div class="badge-wrapper">
+                            <i class="btn-icon fas fa-shopping-cart"></i>
+                            <span class="badge badge-number">5</span>
+                        </div>
+                        Cart
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="product-page-container">
+    <aside class="filter">
+            <div class="filter-header">
+                <h3>Filters</h3>
+                <a href="#" class="btn btn-primary-link">Clear</a>
+            </div>
+            <ul>
+                <h4>Price</h4>
+                <li>
+                    <input type="range" name="" id="">
+                </li>
+            </ul>
+            <ul>
+                <h4>Category</h4>
+                <li class="input input-checkbox-radio">
+                    <input type="checkbox">
+                    <label for="">Camera</label>
+                </li>
+                <li class="input input-checkbox-radio">
+                    <input type="checkbox">
+                    <label for="">Suitcase</label>
+                </li>
+            </ul>
+            <ul>
+                <h4>Rating</h4>
+                <li class="input input-checkbox-radio">
+                    <input type="radio" name="rating">
+                    <label for="">4 Stars & above</label>
+                </li>
+                <li class="input input-checkbox-radio">
+                    <input type="radio" name="rating">
+                    <label for="">3 Stars & above</label>
+                </li>
+                <li class="input input-checkbox-radio">
+                    <input type="radio" name="rating">
+                    <label for="">2 Stars & above</label>
+                </li>
+                <li class="input input-checkbox-radio">
+                    <input type="radio" name="rating">
+                    <label for="">1 Stars & above</label>
+                </li>
+            </ul>
+            <ul>
+                <h4>Sort by</h4>
+                <li class="input input-checkbox-radio">
+                    <input type="radio" name="sort-by">
+                    <label for="">Price - Low to High</label>
+                </li>
+                <li class="input input-checkbox-radio">
+                    <input type="radio" name="sort-by">
+                    <label for="">Price - High to Low</label>
+                </li>
+            </ul>
+    </aside>
+    <main>
+        <h2 class="page-title">Showing All Products <span>(Showing <span>9</span> products)</span></h2>
+        <div class="product-cards-container">
+            <div class="card card-vertical">
+                <i class="far fa-heart"></i>
+                <img src="/assets/camera1.jpg" class="img-responsive" alt="camera">
+                <h5 class="card-title">Camera</h5>
+                <span class="card-price">Rs. 20,000</span>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+            <div class="card card-vertical">
+                <i class="far fa-heart"></i>
+                <span class="card-badge">NEW</span>
+                <img src="/assets/camera1.jpg" class="img-responsive" alt="camera">
+                <h5 class="card-title">Camera</h5>
+                <span class="card-price">Rs. 20,000</span>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+            <div class="card card-vertical">
+                <span class="card-overlay">OUT OF STOCK</span>
+                <i class="far fa-heart"></i>
+                <img src="/assets/camera1.jpg" class="img-responsive" alt="camera">
+                <h5 class="card-title">Camera</h5>
+                <span class="card-price">Rs. 20,000</span>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+            <div class="card card-vertical">
+                <i class="far fa-heart"></i>
+                <img src="/assets/camera1.jpg" class="img-responsive" alt="camera">
+                <h5 class="card-title">Camera</h5>
+                <span class="card-price">Rs. 20,000</span>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+            <div class="card card-vertical">
+                <i class="far fa-heart"></i>
+                <span class="card-badge">NEW</span>
+                <img src="/assets/camera1.jpg" class="img-responsive" alt="camera">
+                <h5 class="card-title">Camera</h5>
+                <span class="card-price">Rs. 20,000</span>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+            <div class="card card-vertical">
+                <span class="card-overlay">OUT OF STOCK</span>
+                <i class="far fa-heart"></i>
+                <img src="/assets/camera1.jpg" class="img-responsive" alt="camera">
+                <h5 class="card-title">Camera</h5>
+                <span class="card-price">Rs. 20,000</span>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+            <div class="card card-vertical">
+                <i class="far fa-heart"></i>
+                <img src="/assets/camera1.jpg" class="img-responsive" alt="camera">
+                <h5 class="card-title">Camera</h5>
+                <span class="card-price">Rs. 20,000</span>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+            <div class="card card-vertical">
+                <i class="far fa-heart"></i>
+                <span class="card-badge">NEW</span>
+                <img src="/assets/camera1.jpg" class="img-responsive" alt="camera">
+                <h5 class="card-title">Camera</h5>
+                <span class="card-price">Rs. 20,000</span>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+            <div class="card card-vertical">
+                <span class="card-overlay">OUT OF STOCK</span>
+                <i class="far fa-heart"></i>
+                <img src="/assets/camera1.jpg" class="img-responsive" alt="camera">
+                <h5 class="card-title">Camera</h5>
+                <span class="card-price">Rs. 20,000</span>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="/script.js"></script>
+</body>
+</html>

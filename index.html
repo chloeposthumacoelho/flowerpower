@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacay Store</title>
+    <link href="https://vacay-ui.netlify.app/components/vacay.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header box-shadow">
+        <div class="hamburger-logo-wrapper">
+            <button><i class="fas fa-bars"></i></button>
+            <h2 class="logo">vacay</h2>
+        </div>
+        <nav class="hamburger-menu">
+            <ul>
+                <li><button><i class="fas fa-times"></i></button></li>
+                <li><a href="/pages/login.html" class="btn btn-secondary-link">Login</a></li>
+                <li><a href="/pages/wishlist.html" class="btn btn-secondary-link">Wishlist</a></li>
+                <li><a href="/pages/cart.html" class="btn btn-secondary-link">Cart</a></li>
+            </ul>
+        </nav>
+        <nav class="navigation">
+            <ul>
+                <li><a href="/index.html" class="btn btn-secondary-link">Home</a></li>
+                <li><a href="/pages/product.html" class="btn btn-secondary-link">Products</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+        <nav class="navigation nav-hide">
+            <ul>
+                <li><a href="/pages/login.html" class="btn btn-primary">Login</a></li>
+                <li class="badge-wrapper">
+                    <a href="/pages/wishlist.html"><i class="btn-icon far fa-heart"></i></a>
+                    <span class="badge badge-number">5</span>
+                </li>
+                <li>
+                    <a href="/pages/cart.html" class="btn btn-secondary-icon-text-no-border">
+                        <div class="badge-wrapper">
+                            <i class="btn-icon fas fa-shopping-cart"></i>
+                            <span class="badge badge-number">5</span>
+                        </div>
+                        Cart
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="landing">
+        <section class="hero">
+            <div class="hero-content">
+                <h3>Time For Holidays ?</h3>
+                <text>Buy vacation essentials.</text>
+                <a href="/pages/product.html" class="btn btn-primary">Start shopping <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+            <div class="img-wrapper">
+                <img class="img-responsive" src="/assets/hero12.jpg" alt="hero">
+            </div>
+        </section>
+        <section class="deals">
+            <h3 class="page-title">DEALS OF THE DAY</h3>
+            <div class="product-cards-container">
+                <div class="card card-vertical">
+                    <i class="far fa-heart"></i>
+                    <img src="/assets/camera1.jpg" class="img-responsive" alt="camera">
+                    <h5 class="card-title">Camera</h5>
+                    <span class="card-price">Rs. 20,000</span>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+                <div class="card card-vertical">
+                    <i class="far fa-heart"></i>
+                    <span class="card-badge">NEW</span>
+                    <img src="/assets/camera1.jpg" class="img-responsive" alt="camera">
+                    <h5 class="card-title">Camera</h5>
+                    <span class="card-price">Rs. 20,000</span>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+                <div class="card card-vertical">
+                    <span class="card-overlay">OUT OF STOCK</span>
+                    <i class="far fa-heart"></i>
+                    <img src="/assets/camera1.jpg" class="img-responsive" alt="camera">
+                    <h5 class="card-title">Camera</h5>
+                    <span class="card-price">Rs. 20,000</span>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>        
+        </section>
+        <section class="categories">
+            <h3 class="page-title">CATEGORIES TO BAG</h3>
+            <div class="categories-container">
+                <a href="/pages/product.html" class="category">
+                    <img class="img-round img-round-sizing" src="/assets/camera1.jpg" alt="camera">
+                    <text>Camera</text>
+                </a>
+                <a href="/pages/product.html" class="category">
+                    <img class="img-round img-round-sizing" src="/assets/suitcase.jpg" alt="suitcase">
+                    <text>Suitcase</text>
+                </a>
+                <a href="/pages/product.html" class="category">
+                    <img class="img-round img-round-sizing" src="/assets/t-shirt.jpg" alt="t-shirt">
+                    <text>T-shirts</text>
+                </a>
+                <a href="/pages/product.html" class="category">
+                    <img class="img-round img-round-sizing" src="/assets/mask.jpg" alt="mask">
+                    <text>Mask</text>
+                </a>
+                <a href="/pages/product.html" class="category">
+                    <img class="img-round img-round-sizing" src="/assets/sanitizer.jpg" alt="sanitizer">
+                    <text>Sanitizer</text>
+                </a>
+                <a href="/pages/product.html" class="category">
+                    <img class="img-round img-round-sizing" src="/assets/camera.jpg" alt="camera">
+                    <text>Sunglasses</text>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
